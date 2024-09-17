@@ -1,0 +1,58 @@
+.contenedor{
+    background-color: aqua;
+    padding: 10px;
+    font-size: 25px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 7fr 1fr;
+    grid-template-areas: "cabezera cabezera cabezera"
+                         "menu menu menu"
+                         "contenido contenido publicidad"
+                         "pie pie pie"
+}
+.contenedor>div{
+    background-color: chartreuse;
+}
+.contenedor .cabezera{
+    background-color: yellow;
+    grid-column: cabezera;
+}
+.contenedor .menu{
+    background-color: coral;
+    grid-column: menu;
+}
+.contenedor .contenido{
+    background-color: beige;
+    grid-column: contenido;
+}
+.hijo-cont{
+    background-color: orange;
+    height: 200px;
+    width: 150px;
+    position: relative;
+    top: 7px;
+    left: 70px;
+}
+.hijo-cont2{
+    background-color: orange;
+    height: 200px;
+    width: 150px;
+    position: relative;
+    top: -190px;
+    left: 300px;
+}
+.hijo-publi{
+    border-style: solid;
+    border-color: green;
+    height: 100px;
+    margin-bottom: 20px;
+}
+.contenedor .publicidad{
+    background-color: beige;
+    grid-column: publicidad;
+}
+.contenedor .pie{
+    background-color: tan;
+    grid-column: pie;
+}
